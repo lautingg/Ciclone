@@ -1,0 +1,534 @@
+/* Stylesheet para o website de Laura Tinguely, Inês Branco e Teresa Martins, criado dia 27.10.2023*/
+
+/* Tipografia */
+@font-face {
+    font-family: AveriaRegular;
+    src: url(/Assets/Fonts/AveriaSansLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: AveriaBold;
+    src: url(/Assets/Fonts/AveriaSansLibre-Bold.ttf);
+}
+
+@font-face {
+    font-family: AveriaBoldItalic;
+    src: url(/Assets/Fonts/AveriaSansLibre-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: AveriaItalic;
+    src: url(/Assets/Fonts/AveriaSansLibre-Italic.ttf);
+}
+
+@font-face {
+    font-family: AveriaLight;
+    src: url(/Assets/Fonts/AveriaSansLibre-Light.ttf);
+}
+
+@font-face {
+    font-family: AveriaLightItalic;
+    src: url(/Assets/Fonts/AveriaSansLibre-LightItalic.ttf);
+}
+
+/* Home page - Título - Websites*/
+.mainindex {
+    position: relative;
+
+}
+
+.index0 {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #F9E864 27.08%, #FFC940 100%);
+    overflow: hidden;
+}
+
+#titulo {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: 'AveriaBold', Arial, Helvetica, sans-serif;
+    font-size: 20vh;
+    padding: 5px;
+    color: #6E527A;
+}
+
+.liindex1,
+.liindex2 {
+    font-family: 'AveriaBold', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 3vh;
+}
+
+.ulindex {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.navindex {
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: relative;
+
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.snindex,
+.refindex {
+    color: black;
+    text-decoration: none;
+}
+
+/* Menu nav bar */
+.nav1 svg {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+.nav1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    display: none;
+    position: absolute;
+    top: 0%;
+    /* Position the menu below the nav */
+    right: 0;
+    height: 100vh;
+    width: 15vw;
+    overflow: hidden;
+}
+
+.nav1 ul li {
+    padding: 20px;
+    text-align: left;
+    font-family: 'AveriaRegular', Arial, Helvetica, sans-serif;
+}
+
+
+.nav1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+/* Menu nav bar - Linkage styles */
+.nav1:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav1 a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav1 a:visited {
+    color: #6E527A;
+    text-decoration: none;
+}
+
+.nav1 a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+.nav1 a:active {
+    color: orange;
+    text-decoration: none;
+}
+
+/* Chapter A - M */
+.chapter1 {
+    margin: 10px;
+    padding: 5px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1E3846 0%, #6E527A 100%);
+}
+
+#h2m {
+    font-family: 'AveriaBold', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 64px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+#pm {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    font-family: 'AveriaRegular', Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+/* Chapter B-Bernardo */
+.chapterb {
+    margin: 10px;
+    padding: 5px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(215, 88, 42) 0%, #6E527A 100%);
+}
+
+#h1b {
+    font-family: 'AveriaBold', Arial, Helvetica, sans-serif;
+    color: #F9E864;
+    font-size: 64px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+#h2b {
+    font-family: 'AveriaBold', Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    opacity: 75%;
+    font-size: 30px;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+
+}
+
+#pbe {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    font-family: 'AveriaRegular', Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+/* Chapter C-Anabela */
+.chapterc {
+    margin: 10px;
+    padding: 5px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #22BDA4 0%, #59276e 100%);
+}
+
+#h1c {
+    font-family: 'AveriaBold', Arial, Helvetica, sans-serif;
+    color: #59276e;
+    font-size: 64px;
+    margin-bottom: 5px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+#pa {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'AveriaRegular', Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+
+}
+#h4a {
+    font-family: 'AveriaRegular', Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 0, 5;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+/* Chapter C - Anabela - Redacted parts style */
+.redacted-blocked-text {
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(90deg, #22BDA4, #59276e);
+    color: white;
+    -webkit-text-fill-color: transparent;
+    font-family: 'AveriaRegular', Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 20px;
+    line-height: 0%;
+}
+
+.kinda-blocked-text {
+    display: inline-block;
+    position: relative;
+    opacity: 30%;
+    font-size: 13px;
+    font-family: 'AveriaRegular', Arial, Helvetica, sans-serif;
+}
+
+/* Home page and menu button - Cellphone Responsiveness configurations */
+@media screen and (max-width: 600px) {
+    #titulo {
+        font-size: 10vh;
+        text-align: center;
+        padding-top: 90px;
+    }
+
+    .liindex1,
+    .liindex2 {
+        font-size: 2vh;
+        padding-top: 100px;
+    }
+
+    .nav1 ul {
+        top: 0vh;
+        width: 100vw;
+        height: 55vh;
+        padding-top: 10px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-radius: 8px;
+        background:  #6E527A;
+        border: 0;
+       
+    }
+
+    .nav1 ul li {
+        text-align: center;
+        font-size: 25px;
+        overflow: hidden;
+        border-radius: 70px;
+        margin: 4px;
+        display: block;
+       background-color: white;
+
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .mainindex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-image {
+        width: 100px; 
+        height: 100px; 
+        margin: 5px; 
+    }
+}
+    
+
+/* Chapter A - M - Cellphone Responsiveness configurations */
+@media screen and (max-width: 600px) {
+    #h2m {
+        font-size: 20vw;
+        padding-left: 40px;
+    }
+    #pm{
+        font-size: 6vw;
+    }
+
+}
+/* Chapter B - Bernardo - Cellphone Responsiveness configurations */
+@media screen and (max-width: 600px) {
+    #h1b{
+        font-size: 15vw;
+    }
+    #h2b{
+        font-size:10vw ;
+
+    }
+    #pbe{
+        font-size: 6vw;
+    }
+}
+/* Chapter C - Anabela - Cellphone Responsiveness configurations */
+@media screen and (max-width: 600px) {
+    #h1c{
+        font-size: 15vw;
+    }
+    #pa{
+        font-size: 6vw;
+    }
+    #h4a{
+        font-size: 6vw; 
+    }
+   
+}
+
+    
+/* Body for about and ref pages */ 
+
+    .bodyref, .bodysobre {
+            margin: 0px;
+            padding: 0px;
+            min-height: 15vh;
+            min-width: 8vh;
+            min-height: 100vh;
+            min-width: 100%;
+            background: linear-gradient(180deg, #FFC940 27.08%, #F9E864 100%);
+           
+    }
+/* Reference page */    
+    
+    .mainref {
+        position: relative;
+       
+    }
+
+        .tituloref {
+            position: relative;
+            display: block;
+            margin: 0;
+            text-align: left;
+            font-size: 6vh;
+            padding: 1em;
+            color: black;
+            font-family: 'AveriaBold' , sans-serif;
+    }
+    
+    
+    /*Lista*/
+    
+    
+    .listaref {
+        position: relative;
+        display: inline-block;
+        font-size: 2.5vh;
+        padding: 6vh;
+        font-family: 'AveriaRegular' , sans-serif;
+        list-style-type: none;
+        margin: 0;
+    }
+    
+    /* List items adjustments*/
+    
+    
+    .edicao , .copyright , .contactos {
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+    
+    
+    .link {
+        color: #6E527A;
+    }
+    
+    
+    .links:hover {
+        color: #984B8A;
+    }
+    
+    /*Sobre nos page*/
+    
+    .mainsobre {
+        position: relative;
+    }
+    
+    
+    .titulosobre {
+        position: relative;
+        display: block;
+        margin: 0;
+        text-align: left;
+        font-size: 6vh;
+        padding: 1em;
+        color: black;
+        font-family: 'AveriaBold' , sans-serif;
+    }
+    
+    .introsobre {
+        position: relative;
+        display: inline-block;
+        font-size: 3vh;
+        padding: 6vh;
+        font-family: 'AveriaRegular' , sans-serif;
+        margin: 0;
+    }
+    
+    /*IMAGENS E CONTAINERS*/
+    
+    .quadradocontainer {
+        text-align: center; 
+        font-size: 0; 
+        padding: 50px;
+    }
+    
+    .quadrado {
+        display: inline-block;
+        position: relative;
+        width: 200px; 
+        height: auto; 
+        min-height: 150px;
+        min-width: 150px;
+        overflow: hidden;
+        margin-right: 2vw;
+        font-size: initial; 
+    }
+    
+    .quadrado:last-child {
+        margin-right: 0; 
+    }
+    
+    .quadrado img {
+        width: calc(100% - 0.8em); 
+        min-height: 150px;
+        min-width: 150px;
+        overflow: hidden;
+        height: auto; 
+        display: block;
+        border: 0.4em solid #6E527A;
+        border-radius: 2%;
+       
+    }
+    
+    .legenda {
+        font-size: 20px;
+        font-family: 'AveriaRegular' , sans-serif;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    
+    
+    .num {
+        font-family: 'AveriaRegular' , sans-serif;
+        padding-top: 0;
+        padding-bottom: 3em;
+        font-size: 15px;
+        margin: 0;
+    }
+    
+    
+    
+    
