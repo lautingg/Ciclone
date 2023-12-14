@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Landing page para o website sobre livro cilcone -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS/stylesheet.css">
+
+    <title>Ciclone</title>
+</head>
+
+<body class="index0">
+
+
+    <main class="mainindex">
+        <p>
+        <h1 id="titulo">CICLONE</h1>
+        </p>
+        <div class="image-container">
+            <script>
+                window.onload = function () {
+
+                    function createImage(id, imagePath, altText, linkUrl) {
+                        var anchor = document.createElement('a');
+                        anchor.href = linkUrl;
+
+                        var image = document.createElement('img');
+                        image.className = 'popup-image';
+                        image.id = 'popup_image_' + id;
+                        image.src = imagePath;
+                        image.alt = altText;
+
+                        if (window.innerWidth <= 600) {
+                            //  mobile devices
+                            image.width = 100; 
+                            image.height = 100; 
+                        } else {
+                            // For larger screens
+                            image.width = 200; 
+                            image.height = 200; 
+
+                            // random positioning
+                            anchor.style.position = 'absolute';
+                            anchor.style.left = Math.random() * (window.innerWidth - 200) + 'px';
+                            anchor.style.top = Math.random() * (window.innerHeight - 200) + 'px';
+
+                            anchor.style.zIndex = 2;
+                        }
+
+                        anchor.appendChild(image);
+                        document.querySelector('.image-container').appendChild(anchor);
+                    }
+
+                    createImage(1, '../Assets/ilustrations/M.JPG', 'M', '/Chapters/chapter_a.html');
+                    createImage(2, '../Assets/ilustrations/B.JPG', 'Bernardo', '/Chapters/chapter_b.html');
+                    createImage(3, '../Assets/ilustrations/A.JPG', 'Anabela', '/Chapters/chapter_c.html');
+                }
+            </script>
+        </div>
+        <nav class="navindex">
+            <div class="navbar">
+                <ul class="ulindex">
+
+                    <li class="liindex1">
+                        <a href="sobre.html" class="snindex">Sobre nós</a>
+                    </li>
+                    <li class="liindex2">
+                        <a href="ref.html" class="refindex">Referências</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </main>
+</body>
+
+</html>
